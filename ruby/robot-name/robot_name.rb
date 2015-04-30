@@ -2,11 +2,11 @@ class Robot
   attr_accessor :name
 
   def initialize
-    @name = random_name
+    reset
   end
 
   def reset
-    initialize
+    @name = random_name
   end
 
   private
