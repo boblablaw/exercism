@@ -1,37 +1,3 @@
-# class FoodChainSong
-#   ANIMALS = {
-#     'fly' => '',
-#     'spider' => 'wriggled and jiggled and tickled inside her.',
-#     'bird' => 'How absurd to swallow a bird!'
-#     # 'cat' => 'Imagine that, to swallow a cat!'
-#   }
-#
-#   ENDING = "I don't know why she swallowed the fly. Perhaps she'll die.\n"
-#
-#   def initialize
-#     create_verses
-#   end
-#
-#   def verse(number)
-#     @verses[number]
-#   end
-#
-#   def create_verses
-#     @verses = Array.new
-#     ANIMALS.each_with_index do | (key, value), index |
-#       if key == 'fly'
-#         verse = "I know an old lady who swallowed a #{key}.\n"
-#       elsif key == 'spider'
-#         verse = "I know an old lady who swallowed a #{key}.\nIt #{value}\nShe swallowed the #{key} to catch the #{ANIMALS.keys[index -1]}.\n"
-#       elsif key == 'bird'
-#         verse = "I know an old lady who swallowed a #{key}.\n#{value}\nShe swallowed the #{key} to catch the #{ANIMALS.keys[index -1]}.\n" + verse
-#       end
-#       puts verse + ENDING
-#       @verses[index + 1] = verse + ENDING
-#     end
-#   end
-# end
-
 class FoodChainSong
   CREATURES = [ :fly, :spider, :bird, :cat, :dog, :goat, :cow, :horse ]
 
